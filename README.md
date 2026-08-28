@@ -190,7 +190,3 @@ Dica: use `volatile` ou variáveis "sink" (como já é feito nos benchmarks exis
 - Resultados podem variar conforme: frequência dinâmica da CPU (turbo boost/throttling), outros processos em execução, política de governor de energia, e estado da cache no momento do teste.
 - O teste de latência de memória usa uma cadeia de ponteiros embaralhada; em máquinas com caches muito grandes, aumentar `numElements` (em `MemoryBenchmark.hpp`) pode ser necessário para realmente "estourar" a cache L3 e medir a latência da RAM.
 - Em ambientes de máquina virtual ou containers com CPU limitada, o teste de escalabilidade multithread pode não refletir o comportamento de hardware dedicado.
-
-## Licença
-
-Este projeto é fornecido como está, livre para uso, modificação e distribuição.
